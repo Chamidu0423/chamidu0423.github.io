@@ -1,0 +1,22 @@
+.Experience-list ol { padding-left: 50px; }
+.Experience-list li { 
+    color: #4F4F4F; 
+    padding-left: 16px;
+    margin-top: 24px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.Experience-list strong { color: #292929; }
+
+.specifical-qualification ol { padding-left: 50px; }
+
+.specifical-qualification {
+    color: #4F4F4F; 
+    padding-left: 16px;
+    margin-top: 24px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+}
