@@ -97,4 +97,27 @@
   .card__content a {
     text-decoration: none;
   }
+
+@media screen and (min-width: 400px) and (max-width: 1110px) {
+  .portfolio-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
+  .portfolio-section .container h2 {
+    text-align: center;
+  }
+  
+  .portfolio-section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-section .col-lg-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
