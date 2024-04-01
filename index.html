@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Chamidu Dilshan's portfolio showcasing skills in web development, UI/UX design, and software engineering.">
+    <meta name="keywords" content="Chamidu Dilshan, portfolio, web development, UI/UX design, software engineering">
+    <meta name="author" content="Chamidu Dilshan">
+    <title>Chamidu Dilshan - Portfolio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/experience-list.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        .portfolio-section {
+            padding: 80px;
+        }
+        .project-card {
+            margin-bottom: 30px;
+        }
+        .skill {
+            margin-top: 150px;
+        }
+        .typed-text-output {
+            height: 50px;
+            display: inline-block;
+        }
+        .typed-text-wrapper {
+            height: 40px;
+            overflow: hidden;
+        }
+        button {
+            border: none;
+        }
+        .social-btn {
+            margin-right: 10px;
+        }
+        .form-floating {
+            padding-bottom: 20px;
+        }
+        .form-floating input {
+            border-radius: 10px;
+        }
+        #goToTopBtn {
+            z-index: 9999;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .row {
+            padding: 10px;
+        }
+        @media (max-width: 767.98px) {
+            .row {
+                padding: 20px;
+                padding-top: 50px;
+            }
+            .row h1, h3, .typed-text-output {
+                padding-left: 0;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <button id="goToTopBtn">&#9650;</button>
+
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/auto-type.js"></script>
+    <script src="js/goto-top.js"></script>
+    <link rel="icon" href="img/favicon.ico" style="border-radius: 50px;">
+
+</head>
+<body>
+<!-- Navigation Sectin -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow animate__animated animate__fadeInUp" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#skills" data-scroll="skills" style="color: blue; transition: color 0.3s;" onmouseover="this.style.color='rgb(68,138,224)'" onmouseout="this.style.color='blue'">Skills and Experience</a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects" data-scroll="projects" style="color: blue; transition: color 0.3s;" onmouseover="this.style.color='rgb(68,138,224)'" onmouseout="this.style.color='blue'">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact" data-scroll="contact" style="color: blue; transition: color 0.3s;" onmouseover="this.style.color='rgb(68,138,224)'" onmouseout="this.style.color='blue'">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<section class="container-fluid bg-light my-6 mt-0" id="home" style="max-height: 100vh; display: block;">
+    <div class="row g-5 align-items-center" style="max-height:100vh; background-color: #ffffff;">
+        <div class="col-lg-6 py-6 pb-0 pt-lg-0 wow animate__animated animate__fadeInUp">
+            <h3 class="text-primary mb-3" style="display: block; padding-left: 50px; margin-left: 20px;">I'm</h3>
+            <h1 class="display-3 mb-3" style="display: block; padding-left: 50px; margin-left: 20px;">Chamidu Dilshan</h1>
+            <div class="typed-text-wrapper">
+                <h2 class="typed-text-output" style="padding-left: 50px; margin-left: 20px;"></h2>
+            </div>    
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid wow animate__animated animate__fadeInUp" src="img/profile.png" alt="Chamidu Dilshan" height="90%" width="90%" style="padding-top: 50px;">
+        </div>
+    </div>
+</section>
+
+<!-- Skill Section -->
+<div class="skill" id="skills">  
+    <div class="container-fluid bg-light my-6 mt-0" id="skill">
+        <div class="container">
+            <h2 class="text-center mb-4 wow animate__animated animate__fadeInUp">Skills & Experience</h2>
+            <div class="row">
+                <div class="col-lg-6 wow animate__animated animate__fadeInUp" style="padding-bottom:5px;">
+                    <div class="tabs">
+                        <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+                        <label class="label" for="tab-1">About me</label>
+                        <div class="panel">
+                          <h4>About me</h4>
+                          <p>"As an undergraduate student of Software Engineering at Open University Sri Lanka, I am passionate about exploring various facets of technology, including web development, app designing, and UI/UX designing. My academic journey has equipped me with a solid foundation in software engineering principles, while my hands-on experience has honed my skills in these diverse areas. Eager to contribute my knowledge and enthusiasm to the ever-evolving field of technology,
+                             I am driven by a commitment to continuous learning and a desire to make meaningful contributions in the world of software development."</p>
+                        </div>
+                        <input class="input" name="tabs" type="radio" id="tab-2"/>
+                        <label class="label" for="tab-2">Exp & Edu</label>
+                        <div class="panel">
+                          <h4>Experience and Education</h4>
+                          <p>
+                            <ol class="Experience-list">
+                                <li>
+                                  <strong>Ordinary Level</strong>
+                                  <p>Engineering technology - A / Maths - B / Science - B</p>
+                                </li>
+                                <li>
+                                  <strong>Advanced Level</strong>
+                                  <p>Engineering technology - C / Science for technology - C / ICT - C with District rank 77. </p>
+                                </li>
+                                <li>
+                                  <strong>University</strong>
+                                  <p>Undergraduate Software Engineering student at Open University Sri Lanka.</p>
+                                </li>
+                              </ol>
+                          </p>
+                        </div>
+                        <input class="input" name="tabs" type="radio" id="tab-3"/>
+                        <label class="label" for="tab-3">Spec Qual</label>
+                        <div class="panel">
+                          <h4>Special Qualifications</h4>
+                          <p>
+                            <div class="specifical-qualification">
+                                <ol>
+                                    <li>Cloud Computing</li>
+                                    <li>English</li>
+                                    <li>Database Knowledge</li>
+                                    <li>Programming Languages</li>
+                                </ol>
+                            </div>
+                          </p>
+                        </div>
+                      </div>        
+                </div>
+                <div class="skill-container wow animate__animated animate__fadeInUp">
+                    <div class="skill-box">
+                        <span class="title">HTML</span>
+                        <div class="skill-bar">
+                            <span class="skill-per html">
+                                <span class="tooltip">90%</span>
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">70%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">JavaScript</span>
+                        <div class="skill-bar">
+                            <span class="skill-per javascript">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Bootstrap</span>
+                        <div class="skill-bar">
+                            <span class="skill-per bootstrap">
+                                <span class="tooltip"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Python</span>
+                        <div class="skill-bar">
+                            <span class="skill-per python">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Dart</span>
+                        <div class="skill-bar">
+                            <span class="skill-per dart">
+                                <span class="tooltip">30%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">JAVA</span>
+                        <div class="skill-bar">
+                            <span class="skill-per java">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">React</span>
+                        <div class="skill-bar">
+                            <span class="skill-per react">
+                                <span class="tooltip">30%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Wordpress</span>
+                        <div class="skill-bar">
+                            <span class="skill-per wordpress">
+                                <span class="tooltip">90%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">UI UX Design (Figma/ Adobe XD)</span>
+                        <div class="skill-bar">
+                            <span class="skill-per uix">
+                                <span class="tooltip">95%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Linux and Windows proficiency</span>
+                        <div class="skill-bar">
+                            <span class="skill-per os">
+                                <span class="tooltip"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div id="projects" class="portfolio-section">
+    <div class="container">
+        <h2 class="text-center mb-4 wow animate__animated animate__fadeInUp">Projects</h2>
+        <div class="row">
+            <div class="col-lg-4 wow animate__animated animate__fadeInUp">
+                <a href="https://www.figma.com/proto/ROP4jCou6N5PZjqlSXwBXU/Iconify-(Community)?type=design&amp;node-id=1-10&amp;t=g7kQlGVWhPCQmDeJ-1&amp;scaling=min-zoom&amp;page-id=0%3A1&amp;starting-point-node-id=7%3A287&amp;mode=design" style="text-decoration: none;" target="_blank">
+                <div class="card">        
+                    <img src="/img/projects/taxi-app-UI-UX.png" alt="" style="justify-content: center;">
+                    <div class="card__content">
+                        <p class="card__title">Swift taxi UI-UX Design</p>
+                        <p class="card__de600scription">"Designed a Swift taxi service prototype, optimizing user experience and efficiency in urban transportation.(Tool: Figma)"</p>
+                    </div>
+                </div>    
+                  <p class="main-title"><strong>Swift taxi UI-UX Design</strong></p>
+                </a>
+            </div>
+            <div class="col-lg-4 wow animate__animated animate__fadeInUp">
+                <a href="" style="text-decoration: none;">
+                <div class="card">
+                    <img src="/img/projects/UI2WEB.jpeg" alt="" style="justify-content: center;">
+                    <div class="card__content">
+                        <p class="card__title">UI to Code Genarating AI tool</p>
+                        <p class="card__de600scription">"Efficiently converted design to HTML/CSS in seconds, saving time. Powered by Gemini for seamless website development."</p>                       </p>
+                    </div>
+                </div>      
+                  <p class="main-title"><strong>UI to HTML/CSS Code genarating tool</strong></p>
+                </a>
+            </div>
+            <div class="col-lg-4 wow animate__animated animate__fadeInUp">
+                <a href="" style="text-decoration: none;"></a>
+                <div class="card">
+                    <img src="/img/projects/Student-management-Sys.png" alt="" style="justify-content: center;">
+                    <div class="card__content">
+                        <p class="card__title">Student management System</p>
+                        <p class="card__de600scription">"NetBeans Java app for efficient school student management, simplifying administrative tasks. User-friendly interface for seamless operation."</p>
+                    </div>
+                </div>      
+                  <p class="main-title"><strong>Simple Student management System</strong></p>
+                  </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="footer" style="background-color: rgb(214, 213, 213);">
+<section id="contact" class="portfolio-section">
+    <div class="container">
+        <h2 class="text-center mb-4 wow animate__animated animate__fadeInUp">Contact</h2>
+        <div class="container-xxl pb-5" id="contact">
+            <div class="container py-5">
+                <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6">
+                        <h2 class="display-5 mb-0 wow animate__animated animate__fadeInUp">Let's Work Together</h1>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-5 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                        <p class="mb-2">My Address</p>
+                        <h5 class="fw-bold">Madurukatiya, Monaragala, SriLanka</h5>
+                        <hr class="w-100">
+                        <p class="mb-2">Call me:</p>
+                        <h5 class="fw-bold">+94 712294466</h5>
+                        <hr class="w-100">
+                        <p class="mb-2">Mail me:</p>
+                        <h5 class="fw-bold">Chamidudilshan0423@gmail.com</h5>
+                        <hr class="w-100">
+                        <p class="mb-2">Follow me:</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-primary social-btn" href="https://wa.me/94712294466" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-square btn-primary social-btn" href="https://www.facebook.com/chamidu.dilshan.3597789?mibextid=5NY4jEj8SVMV44HD" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary social-btn" href="https://github.com/Chamidu0423" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-square btn-primary social-btn" href="https://www.linkedin.com/in/chamidu-dilshan-082b43274/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>                                             
+                    </div>
+                    <div class="col-lg-7 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                        <p class="mb-4"></p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="textarea" class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary py-3 px-5" type="submit" style="border-radius: 15px;">Send Message</button>
+                                </div>
+                            </div>
+                        </form>      
+                        <div class="copy-right" style="color: #585858;">
+                            <p class="copyright">&copy; Copyright <strong>Chamidu0423</strong>. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
